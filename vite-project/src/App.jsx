@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Main from "./Components/Index1"; 
 import CreateContact from "./components/CreateContact"; 
 import EditContact from "./components/EditContact"; 
+import Bekzod from "./Components/Bekzod";
 
 function App() {
   const [contacts, setContacts] = useState([
@@ -30,7 +30,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Main contacts={contacts} deleteContact={deleteContact} />} />
+        <Route path="/" element={<Bekzod contacts={contacts} deleteContact={deleteContact} />} />
         <Route path="/create-contact" element={<CreateContact addContact={addContact} />} />
         <Route
           path="/edit-contact/:id"

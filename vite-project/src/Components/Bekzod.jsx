@@ -2,7 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDebounce } from './UseDebounce'
 
-const Main = ({ contacts, deleteContact }) => {
+const Bekzod = ({ contacts, deleteContact }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const debouncedSearchTerm = useDebounce(searchQuery, 500); // Debounced search query
 
@@ -72,4 +72,4 @@ const Main = ({ contacts, deleteContact }) => {
   );
 };
 
-export default Main;
+export default Bekzod;
