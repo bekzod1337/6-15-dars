@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Main from "./components/Index"; 
+import Main from "./Components/Index1"; 
 import CreateContact from "./components/CreateContact"; 
 import EditContact from "./components/EditContact"; 
 
