@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDebounce } from '../Components/UseDebounce'
+import { useDebounce } from './UseDebounce'
 
 const Main = ({ contacts, deleteContact }) => {
   const [searchQuery, setSearchQuery] = useState('');
